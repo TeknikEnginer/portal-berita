@@ -12,6 +12,7 @@
             @endif
             <div class="card-body">
                 <form action="{{ route('login')}}" method="post">
+                    @csrf
                     @error('email')
                         <small class="text-danger">{{ $message }}</small>
                     @enderror
