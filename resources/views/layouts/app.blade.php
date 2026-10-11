@@ -15,7 +15,7 @@
                 @if (session()->has('key'))
                     <a class="btn btn-outline-secondary" href="{{ url('logout') }}">Logout</a>
                 @else
-                    <a class="btn btn-outline-secondary"  href="url('login')">Login</a>
+                    <a class="btn btn-outline-secondary"  href="{{ url('login') }}">Login</a>
                 @endif
             </div>
         </div>
