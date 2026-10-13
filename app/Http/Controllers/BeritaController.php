@@ -94,6 +94,7 @@ class BeritaController extends Controller
         $berita->judul = $request->judul;
         $berita->isi = $request->isi;
         $berita->tgl = $request->tgl;
+        $berita->kategori_id = $request->kategori_id;
         $berita->save();
 
         return redirect()->route('berita.index')->with('success', '');
